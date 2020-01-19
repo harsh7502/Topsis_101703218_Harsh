@@ -44,7 +44,7 @@ def topsis(matrix,d,w):
         r.append((siminus[i]/(siplus[i]+siminus[i])))  
     sortedr=sorted(r)    
     p=len(matrix)
-    rank=np.zeros(len(matrix))
+    rank=np.zeros(len(matrix),dtype=int)
     for k in range(len(sortedr)):
         index=r.index(sortedr[k])
         rank[index]=p
